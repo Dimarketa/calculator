@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>My First Calculator</title>
+</head>
+<body>
+    <h2>Compute your Simple Arithmetric</h2>
+    <div id="container">
+        <table>
+            <th id="disp" colspan="5">
+                <div id="inp"></div>
+                <div id="outp"></div>
+            </th>
+            <tr>
+                <td onclick="myInput('**')" id="xrty"> x<sup>y</sup> </td>
+                <td onclick="myInput('**(1/2)')" id="sroot">&Sqrt;</td>
+                <td onclick="myInput('(')" id="openBracket">&lpar;</td>
+                <td onclick="myInput(')')" id="closeBracket">&rpar;</td>
+                <td onclick="bSpace()" id="backspace">&larr;</td>
+            </tr>
+            <tr>
+                <td onclick="myInput(7)" id="7">7</td>
+                <td onclick="myInput(8)" id="8">8</td>
+                <td onclick="myInput(9)" id="9">9</td>
+                <td onclick="myInput('*')" id="multiply">*</td>
+                <td onclick="del ()" id="clear">CE</td>
+            </tr>
+            <tr>
+                <td onclick="myInput(4)" id="4">4</td>
+                <td onclick="myInput(5)" id="5">5</td>
+                <td onclick="myInput(6)" id="6">6</td>
+                <td onclick="myInput('-')" id="minus">-</td>
+                <td onclick="myInput('/100')" id="percent">%</td>
+            </tr>
+            <tr>
+                <td onclick="myInput(1)" id="1">1</td>
+                <td onclick="myInput(2)" id="2">2</td>
+                <td onclick="myInput(3)" id="3">3</td>
+                <td onclick="myInput('+')" id="plus">+</td>
+                <td onclick="myInput('/')" id="divide">/</td>
+            </tr>
+            <tr>
+                <td onclick="myInput('.')" id="point">.</td>
+                <td onclick="myInput(0)" id="zero">0</td>
+                <td onclick="myInput('*10**')" id="exp">Exp</td>
+                <td onclick="myAnswer(); dispExp ()" id="equals" colspan="2" style="text-align: center;">=</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="/calculator.js"></script>
+</body>
+</html>
