@@ -1,2 +1,2 @@
 # calculator
-My Simple Clock Project
+My Simple Calculator Project
